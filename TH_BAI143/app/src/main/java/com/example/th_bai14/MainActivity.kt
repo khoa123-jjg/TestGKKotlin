@@ -22,5 +22,16 @@ class MainActivity : AppCompatActivity() {
         }
         val gpa: Double = 3.75
         binding.textView3.text = "GPA: $gpa (${gpa.toAcademicRanking()})"
+        binding.btnUpdate.setOnClickListener {
+            val newGpa = binding.editGpa.text.toString().toDoubleOrNull()
+            if (newGpa == null || newGpa !in 0.0..4.0) {
+                binding.editGpa.error = "GPA phải nằm trong khoảng (0.0 - 4.0)"
+                binding.editGpa.requestFocus()
+                return@setOnClickListener
+            }
+            else{
+                binding.textView3.text = "GPA: $newGpa (${newGpa.toAcademicRanking()})"
+            }
+        }
     }
 }
