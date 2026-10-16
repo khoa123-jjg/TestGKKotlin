@@ -22,7 +22,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Phạm Nhật Khoa"
+            android:text=""
             android:textSize="20sp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="106dp"
@@ -32,7 +32,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="MSSV:2415053122221  LỚP: 24T2"
+            android:text=""
             tools:layout_editor_absoluteX="74dp"
             tools:layout_editor_absoluteY="156dp" />
 
